@@ -1,0 +1,30 @@
+{
+  "name": "crypto-chain-validator",
+  "version": "0.1.0",
+  "main": "dist/schemas-node.js",
+  "module": "dist/schemas-es.js",
+  "repository": "https://github.com/crypto-io/chain-validator",
+  "author": "Glenn Vandeuren <vandeurenglenn@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "backed": {
+    "bundles": [
+      {
+        "src": "src/index.js",
+        "dest": "dist/validator.js",
+        "format": "cjs"
+      },
+      {
+        "src": "src/index.js",
+        "dest": "dist/validator.js",
+        "format": "es"
+      }
+    ]
+  },
+  "dependencies": {
+    "joi": "^13.1.2"
+  },
+  "devDependencies": {
+    "tape": "^4.9.0"
+  }
+}
